@@ -13,6 +13,16 @@ ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
 
+BLOG_SETTINGS = {
+    'defaults': {
+        'auto_publish': False,
+    },
+    'info': {
+        'BLOG_TITLE': 'My Blog\'s new Name',
+        'BLOG_SUBTITLE': 'Blog subname',
+    } 
+}
+
 MANAGERS = ADMINS
 
 DATABASES = {
@@ -144,6 +154,8 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    'Blogger.themes.4col',
+    'Blogger.themes.default',
     'Blogger',
     'south',
 )
